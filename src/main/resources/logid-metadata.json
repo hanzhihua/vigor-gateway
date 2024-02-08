@@ -1,0 +1,8 @@
+[
+  {
+    "brokerList": "1.1.1.1",
+    "kafkaClusterName": "kafka-cluster",
+    "logId": "900001",
+    "topic": "topic1"
+  }
+]
