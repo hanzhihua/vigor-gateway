@@ -5,6 +5,7 @@
 ### vigor-gateway 
 
 数据网关，数据通过它入湖入仓
+![img.png](img.png)
 
 #### 数据格式
 
@@ -26,7 +27,7 @@ int64 ctime = 5;
 #### source
 
 提供http协议, 
-* header需要
+* header需要冗余logid,key为logId
 * body里面放入SimpleEvent的二进制数组
 
 #### sink
