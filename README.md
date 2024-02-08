@@ -9,7 +9,6 @@
 #### 数据格式
 
 * pb格式
-
 <code>
 message SimpleEvent {
 string logId = 1;
@@ -26,10 +25,18 @@ int64 ctime = 5;
 
 #### source
 
-提供http协议
+提供http协议, 
+* header需要
+* body里面放入SimpleEvent的二进制数组
 
 #### sink
 
-提供kafka sink
+提供kafka sink，集群粒度隔离
+
+每个集群包含下列三个组件：
+
+* 多个kafka producer,
+* 多个发送任务，每个发送任务随机分配一个kafka producer
+* 待发送消息列表，map结构，key为logid,value:消息列表
 
 
