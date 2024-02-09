@@ -5,7 +5,7 @@
 ### vigor-gateway 
 
 数据网关，数据通过它入湖入仓
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 #### 数据格式
 
